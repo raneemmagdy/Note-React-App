@@ -118,7 +118,7 @@ export default function Signin() {
                   className="ms-1 text-decoration-underline fw-bold text-info rounded-2"
                   to="/signup"
                 >
-                  Login
+                  SignUp
                 </Link>{" "}
               </p>
             </div>
