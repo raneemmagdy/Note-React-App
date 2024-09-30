@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./Components/Layout/MainLayout";
 import Home from "./Components/Home/Home";
 import AuthLayout from "./Components/Layout/AuthLayout";
@@ -12,7 +12,7 @@ import NoteContextProvider from "./Components/Context/NoteContext";
 
 
 export default function App() {
-  let routes = createBrowserRouter([
+  let routes = createHashRouter([
     {
       path: "/",
       element: <MainLayout />,
